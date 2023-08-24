@@ -1,0 +1,58 @@
+{% load static %}
+<nav class="sidebar sidebar-offcanvas" id="sidebar">
+    <div class="sidebar-brand-wrapper d-none d-lg-flex align-items-center justify-content-center fixed-top">
+      <a class="sidebar-brand brand-logo" href="index.html" style="color: aliceblue;"><h2>EMS</h2></a>
+      <a class="sidebar-brand brand-logo-mini" href="index.html"style="color: aliceblue;"><h3>EMS</h3></a>
+    </div>
+    <ul class="nav">
+      <li class="nav-item profile">
+        <div class="profile-desc">
+          <div class="profile-pic">
+            <div class="count-indicator">
+              <img class="img-xs rounded-circle " src="{% static 'assets/images/faces/face15.jpg' %}" alt="">
+              <span class="count bg-success"></span>
+            </div>
+            <div class="profile-name">
+              <h4 class="mb-0 font-weight-normal" style="color: aliceblue;">Chemsa</h4>
+              <span>Super User</span>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="nav-item nav-category">
+        <span class="nav-link">Navigation</span>
+      </li>
+      <li class="nav-item menu-items">
+        <a class="nav-link" href="{% url 'dash' %}">
+          <span class="menu-icon">
+            <i class="mdi mdi-speedometer"></i>
+          </span>
+          <span class="menu-title">Dashboard</span>
+        </a>
+      </li>
+      <li class="nav-item menu-items">
+        <a class="nav-link" id="create-employee-button" href="{% url 'create' %}">
+          <span class="menu-icon">
+            <i class="mdi mdi-playlist-play"></i>
+          </span>
+          <span class="menu-title">Add Employee</span>
+        </a>
+      </li>
+      <li class="nav-item menu-items">
+        <a class="nav-link" id="read-employee-button" href="{% url 'read' %}">
+          <span class="menu-icon">
+            <i class="mdi mdi-table-large"></i>
+          </span>
+          <span class="menu-title">Read Employee</span>
+        </a>
+      </li>
+      <li class="nav-item menu-items">
+        <a class="nav-link" href="{% url 'documentation' %}">
+          <span class="menu-icon">
+            <i class="mdi mdi-file-document-box"></i>
+          </span>
+          <span class="menu-title">Documentation</span>
+        </a>
+      </li>
+    </ul>
+  </nav>

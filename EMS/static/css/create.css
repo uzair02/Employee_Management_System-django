@@ -1,0 +1,44 @@
+.main_body {
+    font-family: cursive;
+    background-image: url('../images/bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.container {
+    border: 2px solid grey;
+    border-radius: 10px;
+    margin-top: 30px;
+    width: 50%;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+}
+h2 {
+    padding-top: 5px;
+    padding-bottom: 15px; /* Increase this value to adjust the space below the h2 */
+    text-align: center;
+    font-size: 1.6rem;
+    position: relative; /* Add position property */
+}
+
+h2::after {
+    content: "";
+    display: block;
+    border-bottom: 1px dashed #ccc;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+}
+
+/* Custom styles for success message */
+.alert-success {
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+    color: #155724;
+}
+
+.alert-success strong {
+    font-weight: bold;
+}
+

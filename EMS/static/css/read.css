@@ -1,0 +1,20 @@
+.header-style {
+    background-color: #d4d4d4;
+    text-align: center;
+    font-size: 31px;
+    padding-bottom: 1rem; /* Add a little space at the bottom */
+}
+
+table{
+    font-size: 17px;
+}
+
+
+/* Adjust this class as needed to style other parts of your template */
+
+/* Style the success message in red */
+.alert-success {
+    background-color: #f8d7da; /* Light red background */
+    border-color: #f5c6cb; /* Light red border */
+    color: #721c24; /* Dark red text color */
+}
